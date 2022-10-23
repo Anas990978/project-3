@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(26, 208, 187) !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #e99df1 !important;
+}
+a:hover{
+    color: white !important;
+}
+ul{
+    list-style: none;
+}
+
+.carousel-inner h1{
+    text-shadow: 1px 1px rgb(17, 104, 43);
+}
+.carousel-inner .carousel-caption{
+    background: rgba(23, 101, 153, 0.3);
+    border-radius: 7px;
+}
+.card-body h2{
+    font-size: 40px;
+}
+code{
+    font-size: 18px !important;
+}
+.myicon{
+    height:30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 17px;
+}
+.fixedimg{
+background-attachment: fixed;
+background-size: cover;
+height: 250px;
+}
+.fixedimg1{
+background-image: url(../images/High-Resolution-and-High-Definition-Web-Design-Is-it-right-for-me.jpg);
+}
+.fixedimg2{
+background-image: url(../images/pandasecurity-dark-web-scanner.jpg);
+}
+.btnbefo{
+    position: relative;
+    left: 30px;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent rgb(176, 230, 173) transparent;
+top: 20px;
+left: 13px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 80px;
+background-color: rgb(173, 230, 186);
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btnbefo:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px white,
+                -10px -10px 20px white;
+}
+.dropdown-menu li a{
+    text-shadow: 1px 1px 0px black;
+}
+.i{
+    font-size: 20px;
+}
